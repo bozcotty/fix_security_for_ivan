@@ -23,7 +23,7 @@ Line 19 change:
 ```
 <%= content_tag :div, "data-#{params[:status] == 'published' ? 'published' : 'unpublished'}" => @posts.size do %>
 ```
-Putting the published ? statement in whitelists what is allowed.
+Putting the published ? statement in whitelists what is allowed, and protects against the script attacks.
 
 Line 20 change:
 ```
